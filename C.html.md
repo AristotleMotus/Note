@@ -514,4 +514,69 @@
 </td>
 <td>+<i><span class="ipaddr"><span style="padding-right: 1px;">31.255.255.255</span></span></i>
 </td>
-<td><i><span class="ipaddr"><span s
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">224.0.0.0</span></span></i>
+</td>
+<td style="text-align:right;">536,870,912
+</td>
+<td style="text-align:right;">2<sup>29</sup>
+</td>
+<td style="text-align:right;">32 A
+</td>
+<td><i>a</i> = 0 ... (32<i>n</i>) ... 224
+</td>
+<td>
+</td></tr>
+<tr>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">a.0.0.0</span><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">2</span></span></i>
+</td>
+<td>+<i><span class="ipaddr"><span style="padding-right: 1px;">63.255.255.255</span></span></i>
+</td>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">192.0.0.0</span></span></i>
+</td>
+<td style="text-align:right;">1,073,741,824
+</td>
+<td style="text-align:right;">2<sup>30</sup>
+</td>
+<td style="text-align:right;">64 A
+</td>
+<td><i>a</i> = 0, 64, 128, 192
+</td>
+<td>
+</td></tr>
+<tr>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">a.0.0.0</span><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">1</span></span></i>
+</td>
+<td>+<i><span class="ipaddr"><span style="padding-right: 1px;">127.255.255.255</span></span></i>
+</td>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">128.0.0.0</span></span></i>
+</td>
+<td style="text-align:right;">2,147,483,648
+</td>
+<td style="text-align:right;">2<sup>31</sup>
+</td>
+<td style="text-align:right;">128 A
+</td>
+<td><i>a</i> = 0, 128
+</td>
+<td>
+</td></tr>
+<tr>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">0.0.0.0</span><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">0</span></span></i>
+</td>
+<td>+<i><span class="ipaddr"><span style="padding-right: 1px;">255.255.255.255</span></span></i>
+</td>
+<td><i><span class="ipaddr"><span style="padding-right: 1px;">0.0.0.0</span></span></i>
+</td>
+<td style="text-align:right;">4,294,967,296
+</td>
+<td style="text-align:right;">2<sup>32</sup>
+</td>
+<td style="text-align:right;">256 A
+</td>
+<td>
+</td>
+<td>Entire IPv4 Internet, <a href="https://en.m.wikipedia.org/wiki/Default_route" title="Default route">default route</a>.
+</td></tr></tbody></table>
+<p>In common usage, the first address in a subnet, all binary zero in the host identifier, is reserved for referring to the network itself, while the last address, all binary one in the host identifier, is used as a <a href="https://en.m.wikipedia.org/wiki/Broadcast_address" title="Broadcast address">broadcast address</a> for the network; this reduces the number of addresses available for hosts by 2. As a result, a <i><span class="ipaddr"><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">31</span></span></i> network, with one binary digit in the host identifier, would be unusable, as such a subnet would provide no available host addresses after this reduction. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1238218222"><a href="https://en.m.wikipedia.org/wiki/RFC_(identifier)" class="mw-redirect" title="RFC (identifier)">RFC</a>&nbsp;<a rel="nofollow" class="external text" href="https://datatracker.ietf.org/doc/html/rfc3021">3021</a> creates an exception to the "host all ones" and "host all zeros" rules to make <i><span class="ipaddr"><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">31</span></span></i> networks usable for point-to-point links. <i><span class="ipaddr"><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">32</span></span></i> addresses (single-host network) must be accessed by explicit routing rules, as there is no room in such a network for a gateway.
+</p><p>In routed subnets larger than <i><span class="ipaddr"><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">31</span></span></i> or <i><span class="ipaddr"><span style="padding-right: 1px;">/</span><span style="padding-right: 1px;">32</span></span></i>, the number of available host addresses is usually reduced by two, namely the largest address, which is reserved as the broadcast address, and the smallest address, which identifies the network itself.<sup id="cite_ref-RFC_922_15-0" class="reference"><a href="https://en.m.wikipedia.org/wiki/Classless_Inter-Domain_Routing#cite_note-RFC_922-15"><span class="cite-bracket">[</span>15<span class="cite-bracket">]</span></a></sup><sup id="cite_ref-RFC_1812_16-0" class="reference"><a href="https://en.m.wikipedia.org/wiki/Classless_Inter-Domain_Routing#cite_note-RFC_1812-16"><span class="cite-bracket">[</span>16<span class="cite-bracket">]</span></a></sup>
+</p>
